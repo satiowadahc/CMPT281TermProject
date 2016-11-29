@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<!--Created for Assignment 3 Chad A. Woitas -->
+<html>
+<head>
+<title>Strawberry Pi</title>
+  <link rel=stylesheet type="text/css" href="./styles/styles-main.css">
+  <link rel=stylesheet type="text/css" href="./styles/styles-store.css">
+  <script src="./scripts/script-main.js"> </script>
+</head>
+
+<body onload="setup()">
+<div class="pageWrap">
+ <div class="menubar">
+	<a href="./index.html"><img id="logo" src="./images/atom-logo.png"></a>
+	<div class="menuright">
+	  <ul>
+		<li id="menuopt"><a href='./about.html'>About</a></li>
+		<li id="menuopt"><a href='./store.html'>Store</a></li>
+		<li id="menuopt"><a href='./contact.html'>Contact</a></li>
+	  </ul>
+	  <img id="cart" src="./images/Icons/icon_cart.png">
+	</div>
+ </div>
+ <div class="clearboth"></div> 
+
+ <div class="banner">
+	<h1>New fall devices have arrived</h1>
+ </div>
+ 
+ <p id="storetagline"> Appropriatly revolutionized robust scenarios without dynamic strategic theme areas. Objectively orchestrate 
+ ethical convergence after out-of-the-box niches.
+ </p>
+ 
+ <div class="gallery" id="StrawberryPi">
+  <h1> Strawberry Pi </h1>
+  <script src="./scripts/generate-store-strawpi.js"> </script>
+ </div>
+ 
+ <div class="gallery" id="StrawberryPiAcc">
+  <h1> Strawberry Pi Accessories </h1>
+  <script src="./scripts/generate-store-strawpiacc.js"> </script>
+ </div>
+ 
+ <div class="gallery" id="soc">
+  <h1> Industrial Compute Module </h1>
+  <script src="./scripts/generate-store-soc.js"> </script>
+ </div>
+ 
+ <div class="footer">
+	<p id="follow"> Follow us: </p>
+	<a href="#sociallink"><img id="facebook" class="socButton" src="./images/Icons/icon_facebook.png">
+	<a href="#sociallink"><img id="twitter" class="socButton" src="./images/Icons/icon_twitter.png">
+	<a href="#sociallink"><img id="googlep" class="socButton" src="./images/Icons/icon_google.png">
+	<div class="footerright">
+	  <ul>
+		<li id="menuopt"><a href='./about.html'>About</a></li>
+		<li id="menuopt"><a href='./store.html'>Store</a></li>
+		<li id="menuopt"><a href='./contact.html'>Contact</a></li>
+	  </ul>
+	  </div>
+	</br>
+	<p id="copyright">CopyRight 2016. All Rights Reserved</p>
+ </div>
+ </div><!--PAGEWRAP-->
+</body>
+</html>

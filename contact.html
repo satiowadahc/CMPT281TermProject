@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<!--Created for Assignment 3 Chad A. Woitas -->
+<html>
+<head>
+<title>Strawberry Pi</title>
+  <link rel=stylesheet type="text/css" href="./styles/styles-main.css">
+  <link rel=stylesheet type="text/css" href="./styles/style-contact.css">
+  <script src="./scripts/script-main.js"> </script>
+</head>
+
+<body onload="setup()">
+<div class="pageWrap">
+ <div class="menubar">
+	<a href="./index.html"><img id="logo" src="./images/atom-logo.png"></a>
+	<div class="menuright">
+	  <ul>
+		<li id="menuopt"><a href='./about.html'>About</a></li>
+		<li id="menuopt"><a href='./store.html'>Store</a></li>
+		<li id="menuopt"><a href='./contact.html'>Contact</a></li>
+	  </ul>
+	  <img id="cart" src="./images/Icons/icon_cart.png">
+	</div>
+ </div>
+ <div class="clearboth"></div> 
+ <div class="banner">
+	<h1> Let's get the Conversation started. </h1>
+ </div>
+ 	
+ 
+ <div class="gallery">
+	<h3 id="tagline">Lorem ipsum dolor sit amet, ut enim elitr vim, sea cu summo graecis quaestio. Eu stet cotidieque nam, cibo dolores sea an. Vidit causae vocibus ne his. Viris scripta verterem quo et, mel prodesset sadipscing at, an iusto feugait instructior eos.</h3>
+	<div id="holding">
+	<!-- convert to html -->
+	<script src="./scripts/generate-contact-boxes.js"></script>
+	</div>
+	
+	<h1> Send Us a Message</h1>
+<form>
+	Name:
+	<input id="name" type="text">
+	
+	Email:
+	<input id="email" type="text">
+	
+	<br>
+	Message:
+	
+	<input id="message" type="text">
+	
+	<input type="submit" value="Send">
+</form>
+	
+</div>
+ 
+ 
+ <div class="clearboth"></div> 
+ 
+ 
+ <div class="bottombanner">
+	<h1>Don't forget to follow us home.</h1>
+	<h3><a href=shop"> It's okay, we encourage you to stalk us.</a></h3>
+ </div>
+
+ <div class="footer">
+	<p id="follow"> Follow us: </p>
+	<a href="#sociallink"><img id="facebook" class="socButton" src="./images/Icons/icon_facebook.png">
+	<a href="#sociallink"><img id="twitter" class="socButton" src="./images/Icons/icon_twitter.png">
+	<a href="#sociallink"><img id="googlep" class="socButton" src="./images/Icons/icon_google.png">
+	<div class="footerright">
+	  <ul>
+		<li id="menuopt"><a href='./about.html'>About</a></li>
+		<li id="menuopt"><a href='./store.html'>Store</a></li>
+		<li id="menuopt"><a href='./contact.html'>Contact</a></li>
+	  </ul>
+	  </div>
+	</br>
+	<p id="copyright">CopyRight 2016. All Rights Reserved</p>
+ </div>
+</div> 
+</body>
+</html>

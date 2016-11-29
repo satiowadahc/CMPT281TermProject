@@ -1,0 +1,6 @@
+to do
+
+add buttons on index, store
+fix store format
+checkout page with local storage
+links

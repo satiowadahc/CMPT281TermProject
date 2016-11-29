@@ -1,0 +1,37 @@
+/*Chad Woitas original*/
+/* Style Sheet for contact.html*/
+	
+.banner{
+	background-image: url("../images/Banners/header-banner-contact.jpg");
+}
+
+.banner h1{
+	position: relative;
+	top: 10%;
+   text-align: center;
+   color:white;
+}
+
+
+
+.gallery form{
+	width: 80%;
+	margin: 10%;
+	display: inline-block;
+}
+.gallery input{
+	display: inline-block;
+}
+.gallery form #name, #email{
+	width: 30%;
+	margin: 5%;
+}
+
+.gallery form #message {
+	width: 80%;
+	height: 50px;
+}
+
+.bottombanner{
+	background-image: url("../images/Banners/footer-banner-contact.jpg");
+}
