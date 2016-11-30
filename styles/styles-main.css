@@ -1,4 +1,6 @@
 /*Chad Woitas original for term Proj*/
+/*laptop screen width: 1562px */
+
 
 /*universal style sheet for all pages*/
 @font-face {
@@ -44,9 +46,10 @@ p{
 /*stealing sizing from code given but making code myself*/
 
 @media (min-width: 1440px){
+	
+	
 	.pageWrap{
 		width: 1440px;
-		border: solid; /*deleteLATER__----------------------*/
 		margin: auto;
 		background: #F1F1F1;
 	}
@@ -106,5 +109,108 @@ p{
 		width: 1440px;
 		background-repeat: no-repeat;
 		background-size: 100%;
-	}	
+	}
+
+	.footer{
+		display: inline-block;
+		height: 60px;
+		width: 1440px;
+		background: white;
+	}
+	
+	.footer #follow{
+		float: left;
+		display: inline;
+	}
+	
+	.footer .socButton{
+		float: left;
+		display: inline-block;
+	}
 }/*end Media query 1440px*/
+
+@media (min-width: 700px) and (max-width: 1440px){
+	.pageWrap{
+		width: 100%;
+		margin: auto;
+		background: #F1F1F1;
+	}
+	
+	.menubar{
+		display: inline-block;
+		height: 60px;
+		width: 100%;
+		margin:0;
+		padding:0;
+		background: white;
+	}
+	
+	.menubar #logo {
+		float: left;
+		padding: 5px 10px ;
+		height: 50px;
+	}
+	
+	.menuright{
+		float:right;
+		height:60px;
+	
+	}
+	
+	.menubar ul{
+		float: left;
+		height: 30px;
+		margin: 0;
+		padding-top:20px;
+		padding-bottom:10px;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	
+	.menubar ul li{
+		display: inline-table;
+		height: 20px;
+	}
+	
+	.menubar #cart{
+		height: 50px;
+		padding: 5px 0;
+		float: right;
+		display: inline;
+	}
+	
+	#menuopt:hover{
+	background: lightgrey;
+	}
+	
+	.banner {
+		height: 300px;
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}	
+	
+	.footer{
+		height: 60px;
+		width: 100%;
+		background: white;
+		border: solid;/*delete later*/
+	}
+	
+	.footer #follow{
+		float: left;
+	}
+	
+	.footer .socButton{
+		float: left;		
+	}
+	
+	.footerright{
+		float: right;
+		display: inline;
+	}
+	
+	.footerright ul li{
+		
+	}
+}/*end media 700-1440px*/
+
