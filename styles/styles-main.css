@@ -135,7 +135,7 @@ p{
 	
 	.footerright ul li{
 		display: inline;
-		padding: 
+
 	}
 	
 	.footer #copyright{
@@ -227,7 +227,6 @@ p{
 	
 	.footerright ul li{
 		display: inline;
-		padding: 
 	}
 	
 	.footer #copyright{
@@ -258,36 +257,17 @@ p{
 	}
 	
 	.menuright{
-		float:right;
-		height:60px;
-	
+		display: none;
 	}
 	
-	.menubar ul{
-		float: left;
-		height: 30px;
-		margin: 0;
-		padding-top:20px;
-		padding-bottom:10px;
-		padding-right: 0;
-		padding-left: 0;
+	.menuright ul li{
+		display: none;
 	}
 	
-	.menubar ul li{
-		display: inline-table;
-		height: 20px;
+	.menuright cart{
+		display: none;
 	}
-	
-	.menubar #cart{
-		height: 50px;
-		padding: 5px 0;
-		float: right;
-		display: inline;
-	}
-	
-	#menuopt:hover{
-	background: lightgrey;
-	}
+
 	
 	.banner {
 		height: 300px;
@@ -312,15 +292,10 @@ p{
 		padding-left: 10px;
 		
 	}
-	.footerright{
-		float: right;
-		display: inline;
+	.footerright {
+		display: none;
 	}
 	
-	.footerright ul li{
-		display: inline;
-		padding: 
-	}
 	
 	.footer #copyright{
 		font-size: 8px;
