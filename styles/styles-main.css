@@ -112,20 +112,34 @@ p{
 	}
 
 	.footer{
-		display: inline-block;
 		height: 60px;
 		width: 1440px;
 		background: white;
 	}
 	
+	
 	.footer #follow{
 		float: left;
-		display: inline;
 	}
 	
 	.footer .socButton{
 		float: left;
-		display: inline-block;
+		padding-top: 20px;
+		padding-left: 10px;
+		
+	}
+	.footerright{
+		float: right;
+		display: inline;
+	}
+	
+	.footerright ul li{
+		display: inline;
+		padding: 
+	}
+	
+	.footer #copyright{
+		font-size: 8px;
 	}
 }/*end Media query 1440px*/
 
@@ -193,7 +207,99 @@ p{
 		height: 60px;
 		width: 100%;
 		background: white;
-		border: solid;/*delete later*/
+		
+	}
+	
+.footer #follow{
+		float: left;
+	}
+	
+	.footer .socButton{
+		float: left;
+		padding-top: 20px;
+		padding-left: 10px;
+		
+	}
+	.footerright{
+		float: right;
+		display: inline;
+	}
+	
+	.footerright ul li{
+		display: inline;
+		padding: 
+	}
+	
+	.footer #copyright{
+		font-size: 8px;
+	}
+}/*end media 700-1440px*/
+
+@media (max-width: 700px){
+		.pageWrap{
+		width: 100%;
+		margin: auto;
+		background: #F1F1F1;
+	}
+	
+	.menubar{
+		display: inline-block;
+		height: 60px;
+		width: 100%;
+		margin:0;
+		padding:0;
+		background: white;
+	}
+	
+	.menubar #logo {
+		float: left;
+		padding: 5px 10px ;
+		height: 50px;
+	}
+	
+	.menuright{
+		float:right;
+		height:60px;
+	
+	}
+	
+	.menubar ul{
+		float: left;
+		height: 30px;
+		margin: 0;
+		padding-top:20px;
+		padding-bottom:10px;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	
+	.menubar ul li{
+		display: inline-table;
+		height: 20px;
+	}
+	
+	.menubar #cart{
+		height: 50px;
+		padding: 5px 0;
+		float: right;
+		display: inline;
+	}
+	
+	#menuopt:hover{
+	background: lightgrey;
+	}
+	
+	.banner {
+		height: 300px;
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}	
+	
+	.footer{
+		height: 60px;
+		width: 100%;
+		background: white;
+		
 	}
 	
 	.footer #follow{
@@ -201,16 +307,22 @@ p{
 	}
 	
 	.footer .socButton{
-		float: left;		
+		float: left;
+		padding-top: 20px;
+		padding-left: 10px;
+		
 	}
-	
 	.footerright{
 		float: right;
 		display: inline;
 	}
 	
 	.footerright ul li{
-		
+		display: inline;
+		padding: 
 	}
-}/*end media 700-1440px*/
-
+	
+	.footer #copyright{
+		font-size: 8px;
+	}
+}/*end media 700*/
