@@ -1,0 +1,125 @@
+/*Term Project Contact Page Style Sheet*/
+/*Starting new for combing all projects*/
+/*Chad A. Woitas CMPT 281*/
+
+.banner{
+	background-image: url("../images/Banners/header-banner-contact.jpg");
+		color: white;
+}
+
+.bottombanner{
+	background-image: url("../images/Banners/footer-banner-contact.jpg");
+}
+
+.gallery #contactinfo{
+	border-top: solid;
+	padding-top: 20px;
+	border-color: #00C7AB;
+	padding-bottom: 5px;
+}
+
+.gallery .contactbox{
+	border-bottom: solid;
+	border-color: #00C7AB;
+}
+@media (min-width: 1440px){
+
+	.gallery{
+		width: 1440px;
+		height: 400px;
+	}
+
+	.gallery .holding{
+    display: inline-flex;
+		width: 1200px;
+		height: 400px;
+	}
+	
+	.gallery .contactbox{
+		display: inline-block;
+		height: 150px;
+		width: 200px;
+		margin: auto;
+	}
+	
+	.gallery .socButton{
+		height: 25px;
+		padding: 10px;
+	}
+	#contactform{
+		margin: auto;
+		width: 800px;
+		height: 250px;
+		text-align: left;
+	}
+	#contactform #namebox{
+		display: inline-block;
+		padding-right: 20px;
+		width: 380px;
+		height:50px;
+	}
+	
+	#contactform #name{
+		width: 380px;
+	}
+    #contactform #emailbox{
+		padding-left: 15px;
+		display: inline-block;
+		width: 380px;
+		height: 50px;
+	}
+	#contactform #email{
+		width: 380px;
+	}
+	#contactform #message{
+		height:150px;
+		width: 800px;
+	}
+	
+	#contactform #send{
+	background-color: #00C7AB;
+	height: 30px;
+	color:white;
+	border-radius:5px;
+	border: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	}
+}/*end media 1440px*/
+
+@media (min-width: 900px) and (max-width: 1440px){
+	
+	.gallery{
+		width: 100%;
+		height: 500px;
+	}
+
+	.gallery .holding{
+		display: inline-flex;
+		width: 100%;
+		height: 400px;
+	}
+	
+
+}
+
+@media (max-width: 900px){
+	.banner{
+		height:300px;
+		background-size: 900px;
+	}
+	
+	.gallery{
+		width: 100%;
+		height: 1350px;
+	}
+
+	.gallery .holding{
+		width: 100%;
+		height: 1350px;
+	}
+	
+
+}
+	
+	

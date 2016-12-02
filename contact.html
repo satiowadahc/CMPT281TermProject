@@ -21,6 +21,16 @@
 	  </ul>
 	  <a href="./checkout.html"><img id="cart" src="./images/Icons/icon_cart.png"></a>
 	</div>
+	
+	 <div class="dropdown">
+  <button class="dropbtn"><img height=30px src="./images/Icons/icon_menu.png"> </button>
+  <div class="dropdown-content">
+		<a href='./about.html'>   <li>About</li>  </a>
+		<a href='./store.html'>   <li>Store</li>  </a>
+		<a href='./contact.html'> <li>Contact</li></a>
+		<a href="./checkout.html"><li>Cart</li>   </a>
+  </div>
+ </div>
  </div>
  <div class="clearboth"></div> 
  <div class="banner">
@@ -29,32 +39,58 @@
  	
  
  <div class="gallery">
-	<h3 id="tagline">Lorem ipsum dolor sit amet, ut enim elitr vim, sea cu summo graecis quaestio. Eu stet cotidieque nam, cibo dolores sea an. Vidit causae vocibus ne his. Viris scripta verterem quo et, mel prodesset sadipscing at, an iusto feugait instructior eos.</h3>
-	<div id="holding">
-	<!-- convert to html -->
-	<script src="./scripts/generate-contact-boxes.js"></script>
+	<p id="tagline">Quickly Revolutionize maintainable technologies through plug -and- play functionalities.
+	Completely re-engineer excellent e-commerce rather.</p>
+	<div class="holding">
+		<div class="contactbox" id="call">
+			<p> Call </p>
+			<div class="contactp">
+			<p id="contactinfo">
+				(123) 456 -7890
+			</p>
+			</div>
+		</div>
+		<div class="contactbox" id="visit">
+			<p> Visit Us </p>
+			<div class="contactp">
+			<p id="contactinfo">
+				42 Wallaby Way, Saskatoon, SK 12345
+			</p>
+			</div>
+		</div>
+		<div class="contactbox" id="follow">
+			<p> Follow Us </p>
+			<div class="contactp">
+			<p id="contactinfo">
+				<a href="#sociallink"><img id="facebook" class="socButton" src="./images/Icons/icon_facebook.png"></a>
+				<a href="#sociallink"><img id="twitter" class="socButton" src="./images/Icons/icon_twitter.png"></a>
+				<a href="#sociallink"><img id="googlep" class="socButton" src="./images/Icons/icon_google.png"></a>
+			</p>
+			</div>
+		</div>
 	</div>
-	
-	<h1> Send Us a Message</h1>
+</div>
+
+
+<h1> Send Us a Message</h1>
+<div id="contactform">
 <form>
-	Name:
+	<div id="namebox">
+	<label for="name">Name:</label>
 	<input id="name" type="text">
-	
-	Email:
+	</div>
+	<div id="emailbox">
+	<label for="email">Email:</label>
 	<input id="email" type="text">
-	
+	</div>
 	<br>
-	Message:
-	
+	<label for="message">Message:</label>
 	<input id="message" type="text">
 	
-	<input type="submit" value="Send">
+	<input type="submit" id="send" value="Send">
 </form>
 	
 </div>
- 
- 
- <div class="clearboth"></div> 
  
  
  <div class="bottombanner">
