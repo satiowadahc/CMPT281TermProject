@@ -60,6 +60,11 @@ h3 a{
 .bottombanner H1{
 	color: white;
 }
+.bottombanner h3{
+	color: white;
+}
+
+
 @media (min-width: 1440px){
 	
 	
