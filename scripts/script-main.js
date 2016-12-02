@@ -19,12 +19,12 @@ function setup(){
 	//add event listeners to add cart buttons
 	var buttons = document.getElementsByClassName("addtocart");
 		for (let i=0; i < buttons.length;i++){
-			buttons[i].addEventListener("Click",addToCart(this.id));
+			buttons[i].addEventListener("Click",addToCart());
 		}
 }
 
-function addToCart(temp){
-	alert(temp);
+function addToCart(){
+	alert(this);
 }
 
 function display(featureBoxes){

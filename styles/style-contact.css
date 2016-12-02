@@ -85,6 +85,7 @@
 	padding-left: 10px;
 	padding-right: 10px;
 	}
+	
 }/*end media 1440px*/
 
 @media (min-width: 900px) and (max-width: 1440px){
@@ -93,13 +94,60 @@
 		width: 100%;
 		height: 500px;
 	}
-
+	
 	.gallery .holding{
 		display: inline-flex;
 		width: 100%;
 		height: 400px;
 	}
 	
+	.gallery .contactbox{
+		display: inline-block;
+		width: 300px;
+		margin: auto;
+	}
+	
+	.gallery .contactp{
+		height: 75px;
+	}
+	
+	#contactform{
+		margin-left: 10%;
+		width: 80%;
+		height: 250px;
+		text-align: left;
+	}
+	#contactform #namebox{
+		display: inline-block;
+		width: 49%;
+		height:50px;
+	}
+	
+	#contactform #name{
+		width: 90%;
+	}
+    #contactform #emailbox{
+		display: inline-block;
+		width: 49%;
+		height: 50px;
+	}
+	#contactform #email{
+		width: 90%;
+	}
+	#contactform #message{
+		height:150px;
+		width: 100%;
+	}
+	
+	#contactform #send{
+	background-color: #00C7AB;
+	height: 30px;
+	color:white;
+	border-radius:5px;
+	border: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	}
 
 }
 
