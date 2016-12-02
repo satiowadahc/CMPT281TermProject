@@ -10,14 +10,13 @@ function loadXMLDoc(){
 		 //do things here
 		  var result = JSON.parse(this.responseText);
 		  var popular = result["Popular Items"];
-		  var allitems = result["All Items"];
 		  document.getElementById("newxml").innerHTML = 
-			allitems[i].itemDescription + 
-			allitems[i].itemPrice;
+			popular[i].itemDescription + 
+			popular[i].itemPrice;
 		}
 	};
 	
-	xmlhttp.open("GET","https://mockbin.org/bin/bc8ed2d5-1d54-42ca-a910-cfe9ded06d26",true);
+	xmlhttp.open("GET","http://mockbin.org/bin/a3b756a8-b006-415b-812b-108f98d8ee08/",true);
 	xmlhttp.send();
 	counter();
 }
@@ -35,7 +34,7 @@ function counter(){
 		}
 	}
 	else{
-		//reset counter
+		//set counter
 		sessionStorage.clickcount=0;
 	}
 }

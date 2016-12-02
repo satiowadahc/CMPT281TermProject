@@ -1,29 +1,113 @@
-/*Chad Woitas original*/
-.banner {
-	background-image: url("../images/Banners/header_banner_store.jpg"); 
+.banner{
+	background-image: url("../images/Banners/header_banner_store.jpg");
+		color: white;
 }
 
-.banner h1{
-	position: relative;
-	width: 100%;
-	left: 0;
-	top: 20%;
-	text-align: center;
-	color: white;
+
+@media (min-width: 1440px){
+	.holding{
+		display: inline-flex;
+		height: 500px;
+		width: 1440px;
+	}
+
+	.featureBox{
+		display: inline-block;
+		width: 300px;
+		height: 500px;
+		margin-left: 135px; /*1440px-900 (featurebox) / 4Gaps*/
+		background:white;
+	}
+	
+	.featureBox img{
+		display: block;
+		width: 200px;
+		padding: 50px;
+	}
+	
+	/*holds paragraphs at the right height*/
+	.featureBox .imgbox {
+		height: 300px;
+		border-bottom: solid;
+		border-color: #00C7AB;
+	}
+
+	.featureBox #price{
+		color: #515D67;
+	}
+
+}/*end media 1440px*/
+
+@media (max-width: 700px){
+	.banner h3{
+		display:none;
+	}
+	
+}
+@media (min-width: 900px) and (max-width: 1440px){
+	
+	.holding{
+		display: inline-flex;
+		height: 500px;
+		width: 100%;
+	}
+
+	.featureBox{
+		display: inline-block;
+		width: 300px;
+		height: 500px;
+		margin: auto;
+		background:white;
+	}
+	
+	.featureBox img{
+		display: block;
+		width: 200px;
+		padding: 50px;
+	}
+	
+	/*holds paragraphs at the right height*/
+	.featureBox .imgbox {
+		height: 300px;
+	}
+
+	.featureBox #price{
+		color: #515D67;
+	}
 }
 
-.gallery h1{
-	text-align: center;
-}
+@media (max-width: 900px){
+	.banner{
+		height:300px;
+		background-size: 900px;
+	}
+	
+	
+	.holding{
+		height: 1650px;
+	}
 
-.featureBox{
-	display: inline-block;
-	width: 22.5%;
-	padding: 5%;
-	text-align: center;
-	border-style: solid;
+	.featureBox{
+		display: inline-block;
+		width: 300px;
+		height: 500px;
+		margin: auto;
+		margin-bottom: 50px;
+		background:white;
+	}
+	
+	.featureBox img{
+		display: block;
+		width: 200px;
+		padding: 50px;
+	}
+	
+	/*holds paragraphs at the right height*/
+	.featureBox .imgbox {
+		height: 300px;
+	}
 
-}
-.featureBox img{
-	width:80%
+	.featureBox #price{
+		color: #515D67;
+	}
 }

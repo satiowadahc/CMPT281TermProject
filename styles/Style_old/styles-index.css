@@ -1,0 +1,70 @@
+/*Chad Woitas old*/
+/* Style Sheet for index.html*/
+
+.banner{
+	background-image: url("../images/Banners/header-banner-home.jpg");
+		color: white;
+}
+
+.banner h1{
+	position: relative;
+	top: 10%;
+  text-align: center;
+}
+
+
+
+.banner h3{
+	position: relative;
+  left: 0;
+	top: 15%;
+  width: 100%;
+  text-align: center;
+}
+.banner button{
+	position: relative;
+	top: 25%;
+	left: 45%;
+    width: 10%;
+    text-align:center;
+}
+
+.banner a{
+	color:white;
+}
+
+.gallery{
+	text-align: center;
+}
+
+#holding{
+	height: 500px;
+	width: 100%;
+}
+
+.featureBox{
+	display: inline-block;
+	height: 500px;
+	width: 22.5%;
+	background:white;
+
+}
+.featureBox img{
+	position: relative;
+	top: 50px;
+	height: 200px;
+	width:80%
+}
+/* .featureBox .model p{
+	position: relative;
+	top: 300px;
+} */
+
+.featureBox #price{
+	color: #515D67;
+}
+
+.bottombanner{
+	width: 100%;
+	background-image: url("../images/Banners/footer-banner-home.jpg");
+}

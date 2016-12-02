@@ -1,47 +1,104 @@
-/*Chad Woitas original*/
-/* Style Sheet for about.html*/
+/*Term Project about Page Style Sheet*/
+/*Starting new for combing all projects*/
+/*Chad A. Woitas CMPT 281*/
 
 .banner{
 	background-image: url("../images/Banners/header-banner-about.jpg");
-}
-
-.banner h1{
-	position: relative;
-	top: 10%;
-	left: 0;
-	width: 100%;
-	text-align: center;
-	color: white;
-}
-
-
-.gallery{
-	height: 400px;
-	width: 100%;
-	text-align: center;
-}
-
-.gallery #teachlearncreate{
-	height: 300px;
-}
-.gallery .infobox{
-	display: inline-table;
-	height: 300px;
-	width: 25%;
-	padding: 2.5%;
-
-}
-
-.gallery .infobox img{
-	position: relative;
-}
-.gallery #tlc{
-	border-top: solid;
-	border-bottom: solid;
-	border-color: #00C7AB;
+		color: white;
 }
 
 .bottombanner{
 	background-image: url("../images/Banners/footer-banner-about.jpg");
 }
 
+.gallery .tlcPbox{
+	border-top: solid;
+	border-bottom: solid;
+	border-color: #00C7AB;
+}
+@media (min-width: 1440px){
+
+	.gallery{
+		width: 1440px;
+		height: 500px;
+	}
+
+	.gallery .holding{
+    display: inline-flex;
+		width: 1440px;
+		height: 400px;
+	}
+	
+	.gallery .infobox{
+		display: inline-block;
+		width: 300px;
+		margin: auto;
+	}
+	
+	.gallery .tlcPbox{
+		height: 75px;
+	}
+	
+	#future{
+		margin: 0px 135px 135px 135px;
+	}
+}/*end media 1440px*/
+
+@media (min-width: 900px) and (max-width: 1440px){
+	
+	.gallery{
+		width: 100%;
+		height: 500px;
+	}
+
+	.gallery .holding{
+		display: inline-flex;
+		width: 100%;
+		height: 400px;
+	}
+	
+	.gallery .infobox{
+		display: inline-block;
+		width: 300px;
+		margin: auto;
+	}
+	
+	.gallery .tlcPbox{
+		height: 75px;
+	}
+	
+	#future{
+		margin: 0px 135px 135px 135px;
+	}
+
+}
+
+@media (max-width: 900px){
+	.banner{
+		height:300px;
+		background-size: 900px;
+	}
+	
+	.gallery{
+		width: 100%;
+		height: 1350px;
+	}
+
+	.gallery .holding{
+		width: 100%;
+		height: 1350px;
+	}
+	
+	.gallery .infobox{
+		display: inline-block;
+		width: 300px;
+		margin: auto;
+		margin-bottom: 50px;
+	}
+	
+	.gallery .tlcPbox{
+		height: 75px;
+	}
+	
+	
+}

@@ -1,21 +1,47 @@
-/*Chad Woitas original*/
+/*Chad Woitas original for term Proj*/
+/*laptop screen width: 1562px */
+/*ultrawide width: 1887px;*/
+/*dell: 1263px*/
+
+
+/*universal style sheet for all pages*/
 @font-face {
     font-family: Titillium;
     src: url("../fonts/TitilliumWeb-Regular.ttf");
 }
+@font-face {
+    font-family: TitilliumBold;
+    src: url("../fonts/TitilliumWeb-Bold.ttf");
+}
+
+@font-face {
+    font-family: TitilliumSBold;
+    src: url("../fonts/TitilliumWeb-SemiBold.ttf");
+}
 
 body{
-	background: #F1F1F1;
-	font-family:Titillium; 
-}
-.pageWrap{
-	width: 90%;
-	position: absolute;
-	left: 5%;
-	background: #F1F1F1;
+background: white;
+font-family: Titillium;
+text-align: center;
 }
 
-/*universal styles*/
+
+H1{
+	font-family: TitilliumBold;
+	font-size: 42px;
+}
+H2{
+	font-family: Titillium;
+	font-size: 30px;
+}
+H3{
+	font-family: TitilliumBold;
+	font-size: 24px;
+}
+p{
+	font-family: TitilliumSBold;
+	font-size: 16px;
+}
 
 button{
 	background-color: #00C7AB;
@@ -27,130 +53,349 @@ button{
 	padding-right: 10px;
 }
 
-
-/* BEGIN MENU STYLE */
-.menubar{
- height: 55px;
- position: relative;
- background: white;
- padding-top:5px;
-}
-
-.menubar #logo{
-	float: left;
-	padding-left: 5px;
-	height: 50px;
-} 
-
-.menuright{
-	float:right;
-	display:inline-flex;
-	height:50px;
-    width: 30%;
-}
-
-.menubar ul{
-	height: 40px;
-	padding: 5px;
-	float: right; 
-	width: 80%;
-	margin: 0;
-}
-
-#menuopt{
-	display: inline-table;
-	margin-top: 5px;
-	width: 25%;
-	padding: 3%;
-	text-align: center;
-}
-
-
-#menuopt:hover{
-	background: lightgrey;
-}
-.menubar #cart{
-	height: 50px;
-	float: right;
-	display: inline;
-}
-
-.clearboth{
-	clear: both;
-}
-
-/** END MENU STYLE   */
-
-
-
-.banner {
-	height: 300px;
-	width: 100%;
-	background-repeat: no-repeat;
-	background-size: 100%;
-}
-
-.bottombanner {
-	height:300px;
-	text-align: center;
-}
-
-.bottombanner h1{
-	position: relative;
-	top: 60px;
-  width: 100%;
-  text-align: center;
+h3 a{
 	color: white;
 }
 
+.bottombanner H1{
+	color: white;
+}
 .bottombanner h3{
-	position: relative;
-	top: 100px;
-    width: 100%;
 	color: white;
 }
 
 
-.footer{
- position: relative;
- height: 70px;
- padding: 10px;
- background: white;
-	border: solid;
-}
-
-
-.footer #follow{
-	float: left;
-	text-align: left;
-}
-.footer .socButton{
-	height: 30px;
-	padding: 10px;
-	text-align: left;
+@media (min-width: 1440px){
 	
+	
+	.pageWrap{
+		width: 1440px;
+		margin: auto;
+		background: #F1F1F1;
+	}
+	
+	.menubar{
+		display: inline-block;
+		height: 60px;
+		width: 1440px;
+		margin:0;
+		padding:0;
+		background: white;
+	}
+	
+	.menubar #logo {
+		float: left;
+		padding: 5px 10px ;
+		height: 50px;
+	}
+	
+	.dropbtn{
+		display:none;
+	}
+	
+	.dropdown-content{
+		display:none;
+	}
+	
+	.menuright{
+		float:right;
+		height:60px;
+		width: 360px;
+	}
+	
+	.menubar ul{
+		float: left;
+		height: 30px;
+		width: 302px;
+		margin: 0;
+		padding-top:20px;
+		padding-bottom:10px;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	
+	.menubar ul li{
+		display: inline-table;
+		width: 98px;
+		height: 20px;
+	}
+	
+	.menubar #cart{
+		height: 50px;
+		width: 58px;/*0.5 px stretch*/
+		padding: 5px 0;
+		float: right;
+		display: inline;
+	}
+	
+	#menuopt:hover{
+	background: lightgrey;
+	}
+	
+	.banner {
+		height: 300px;
+		width: 1440px;
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	
+	.bottombanner{
+		height:300px;
+		color: white;
+		width: 1440px;
+	}
+	.footer{
+		height: 60px;
+		width: 1440px;
+		background: white;
+	}
+	
+	
+	.footer #follow{
+		float: left;
+	}
+	
+	.footer .socButton{
+		float: left;
+		padding-top: 20px;
+		padding-left: 10px;
+		
+	}
+	.footerright{
+		float: right;
+		display: inline;
+	}
+	
+	.footerright ul li{
+		display: inline;
+
+	}
+	
+	.footer #copyright{
+		font-size: 8px;
+	}
+}/*end Media query 1440px*/
+
+@media (min-width: 700px) and (max-width: 1440px){
+	.pageWrap{
+		width: 100%;
+		margin: auto;
+		background: #F1F1F1;
+	}
+	
+	.menubar{
+		display: inline-block;
+		height: 60px;
+		width: 100%;
+		margin:0;
+		padding:0;
+		background: white;
+	}
+	
+	.menubar #logo {
+		float: left;
+		padding: 5px 10px ;
+		height: 50px;
+	}
+	
+	.dropbtn{
+		display:none;
+	}
+	
+	.dropdown-content{
+		display:none;
+	}
+	.menuright{
+		float:right;
+		height:60px;
+	
+	}
+	
+	.menubar ul{
+		float: left;
+		height: 30px;
+		margin: 0;
+		padding-top:20px;
+		padding-bottom:10px;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	
+	.menubar ul li{
+		display: inline-table;
+		height: 20px;
+	  padding-left: 5px;
+	}
+	
+	.menubar #cart{
+		height: 50px;
+		padding: 5px 0;
+		float: right;
+		display: inline;
+	}
+	
+	#menuopt:hover{
+	background: lightgrey;
+	}
+	
+	.banner {
+		height: 300px;
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}	
+	
+	.footer{
+		height: 60px;
+		width: 100%;
+		background: white;
+		
+	}
+	
+.footer #follow{
+		float: left;
+	}
+	
+	.footer .socButton{
+		float: left;
+		padding-top: 20px;
+		padding-left: 10px;
+		
+	}
+	.footerright{
+		float: right;
+		display: inline;
+	}
+	
+	.footerright ul li{
+		display: inline;
+	}
+	
+	.footer #copyright{
+		font-size: 8px;
+	}
+}/*end media 700-1440px*/
+
+@media (max-width: 700px){
+		.pageWrap{
+		width: 100%;
+		margin: auto;
+		background: #F1F1F1;
+	}
+	
+	.menubar{
+		display: inline-block;
+		height: 60px;
+		width: 100%;
+		margin:0;
+		padding:0;
+		background: white;
+	}
+	
+	.menubar #logo {
+		float: left;
+		padding: 5px 10px ;
+		height: 50px;
+	}
+	
+	.menuright{
+		display: none;
+	}
+	
+	.menuright ul li{
+		display: none;
+	}
+	
+	.menuright cart{
+		display: none;
+	}
+
+	
+	.banner {
+		height: 300px;
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}	
+	
+	.footer{
+		height: 60px;
+		width: 100%;
+		background: white;
+		
+	}
+	
+	.footer #follow{
+		float: left;
+	}
+	
+	.footer .socButton{
+		float: left;
+		padding-top: 20px;
+		padding-left: 10px;
+		
+	}
+	.footerright {
+		display: none;
+	}
+	
+	
+	.footer #copyright{
+		font-size: 8px;
+	}
+}/*end media 700*/
+
+
+/*hamburger style, separate as not entirely my own*/
+/*Code used from w3schools for the button to work,
+modified for sake of assignment*/
+@media (max-width: 700px){
+	
+/* Style The Dropdown Button */
+.dropdown .dropbtn{
+    color: white;
+	background-color: #f1f1f1;
+    font-size: 16px;
+    border: none;
+	border-radius: 5px;
+    cursor: pointer;
 }
 
-.footerright{
-	float:right;
-	height:50px;
-   width: 30%;
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+	float: right;
+    display: inline-block;
 }
 
-.footerright ul{
-	height: 40px;
-	padding: 5px;
-	float: right; 
-	width: 80%;
-	margin: 0;
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+	left: -110px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.footerright ul li a{
-	font-family: "Comic Sans", sans-serif;
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
-.footer #copyright{
-	height: 10px;
-	font-size: 0.5em;
-	float: left;
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+   background-color: #b6c0c9;
+	 border: none;
+	 border-radius: 5px;
+}
+}/*end media 700 drop button*/
