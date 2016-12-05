@@ -6,9 +6,7 @@
 
 @media (min-width: 1440px){
 	.holding{
-		display: inline-flex;
-		height: 500px;
-		width: 1440px;
+  text-align: left;
 	}
 
 	.featureBox{
@@ -16,7 +14,10 @@
 		width: 300px;
 		height: 500px;
 		margin-left: 135px; /*1440px-900 (featurebox) / 4Gaps*/
+		margin-top: 50px;
+		margin-bottom: 10px;
 		background:white;
+		text-align: center;
 	}
 	
 	.featureBox img{
