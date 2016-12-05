@@ -11,9 +11,9 @@
 		  var soc = result["Industrial Compute Model"];
 		
 		//store Page
-		display(strawberry,"StrawberryPi");
-		display(access,"StrawberryPiAcc");
-		display(soc,"soc");
+		//display(strawberry,"StrawberryPi");
+		//display(access,"StrawberryPiAcc");
+		//display(soc,"soc");
 		
 		//index Page;
 		display(popular,"indexholding");
