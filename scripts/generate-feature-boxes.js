@@ -1,5 +1,6 @@
 //Chad Woitas original
 
+function updateInventory(page){
 	var xmlhttp = new XMLHttpRequest();
 	
 	xmlhttp.onreadystatechange = function(){
@@ -9,20 +10,23 @@
 		  var strawberry = result["Strawberry Pi"];
 		  var access = result["Strawberry Pi Acessories"];
 		  var soc = result["Industrial Compute Model"];
-		
-		//store Page
-		//display(strawberry,"StrawberryPi");
-		//display(access,"StrawberryPiAcc");
-		//display(soc,"soc");
-		
-		//index Page;
-		display(popular,"indexholding");
+			if(page =="store"){
+			//store Page
+			display(strawberry,"StrawberryPi");
+			display(access,"StrawberryPiAcc");
+			display(soc,"soc");
+			}
+			else if(page=="index"){
+			//index Page;
+			display(popular,"indexholding");
+			}
 		}
 	};
-	var urlMyEdit = "http://mockbin.org/bin/cf50b0da-56f2-44cb-9d5d-f898a2cb0c2c";
+	var urlNoComma = "https://mockbin.org/bin/0ceb11fe-604f-4d2b-a03c-d641f94cbb61";
+	var urlMyEdit = "http://mockbin.org/bin/f57fcb2a-ca7c-4a7c-8366-0a9d19cc65f4";
 	xmlhttp.open("GET",urlMyEdit,true);
 	xmlhttp.send();
-	
+}
 
 function display(objlist,holdingCell){
 for (let i=0;i<objlist.length;i++){
