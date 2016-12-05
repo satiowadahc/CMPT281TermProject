@@ -29,7 +29,8 @@ function updateInventory(page){
 }
 
 function display(objlist,holdingCell){
-for (let i=0;i<objlist.length;i++){
+	//let i in objlist required for safari
+for (let i in objlist){
 document.getElementById(holdingCell).innerHTML = 
 	document.getElementById(holdingCell).innerHTML +
 	 "<div class=featureBox id=\""+objlist[i].itemDescription+"\""
