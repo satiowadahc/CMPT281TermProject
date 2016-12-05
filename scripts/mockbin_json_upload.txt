@@ -14,7 +14,7 @@
 ],
 
  "Strawberry Pi": [ { 
- "itemImageSrc" : "../images/Store_Products/Strawberry_Pi_3_Model_B.jpg", 
+ "itemImageSrc" : "./images/Store_Products/Strawberry_Pi_3_Model_B.jpg", 
  "itemImageAlt" : "placeholder",
  "itemDescription" : " Strawberry Pi 3 Model B ", 
  "itemPrice" : "49.95" },
@@ -32,10 +32,10 @@
  "itemPrice" : "149.95" } ], 
  
  "Strawberry Pi Acessories": [ 
-	{ "itemImageSrc" : "./images/Store_Products/Strawberry_Pi_3_Model_B copy.jpg", 
+	{ "itemImageSrc" : "./images/Store_Products/Strawberry_Pi_3_Model_B.jpg", 
 	  "itemImageAlt" : "placeholder", 
 	  "itemDescription" : " Strawberry Pi 3 Model B ", "itemPrice" : "49.95" }, 
-    { "itemImageSrc" : "./images/Store_Products/Strawberry_Pi_Zero copy.jpg",
+    { "itemImageSrc" : "./images/Store_Products/Strawberry_Pi_Zero.jpg",
 	  "itemImageAlt" : "placeholder",
 	  "itemDescription" : " Strawberry Pi Zero ", 
 	  "itemPrice" : "29.95" }, 
@@ -49,11 +49,11 @@
  "itemPrice" : "149.95" } ], 
  
  "Industrial Compute Model": [ { 
- "itemImageSrc" : "./images/Store_Products/Strawberry_Pi_3_Model_B copy.jpg", 
+ "itemImageSrc" : "./images/Store_Products/Strawberry_Pi_3_Model_B.jpg", 
  "itemImageAlt" : "placeholder", 
  "itemDescription" : " Strawberry Pi 3 Model B ", 
  "itemPrice" : "49.95" }, 
- { "itemImageSrc" : "./images/Store_Products/Strawberry_Pi_Zero copy.jpg",
+ { "itemImageSrc" : "./images/Store_Products/Strawberry_Pi_Zero.jpg",
  "itemImageAlt" : "placeholder",
  "itemDescription" : " Strawberry Pi Zero ",
  "itemPrice" : "29.95" }, 
