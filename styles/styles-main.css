@@ -64,7 +64,17 @@ h3 a{
 	color: white;
 }
 
+#underline {
+	width: 160px;
+	height: 2px;
+	position: relative;
+	top: -20px;
+	background-color: #000000;
+	transition: left 0.0s;
+	clear: left;
+	left: 0px;
 
+}
 @media (min-width: 1440px){
 	
 	
