@@ -6,21 +6,45 @@
   <link rel=stylesheet type="text/css" href="./styles/styles-main.css">
   <link rel=stylesheet type="text/css" href="./styles/styles-checkout.css">
   <script src="./scripts/script-main.js"> </script>
-<body>
-<div class="pageWrap">
- <div class="menubar">
-	<a href="./index.html"><img id="logo" src="./images/atom-logo.png"></a>
-	<div class="menuright">
-	  <ul>
-		<li id="menuopt"><a href='./about.html'>About</a></li>
-		<li id="menuopt"><a href='./store.html'>Store</a></li>
-		<li id="menuopt"><a href='./contact.html'>Contact</a></li>
-	  </ul>
-	  <img id="cart" src="./images/Icons/icon_cart.png">
+  <script src="./scripts/displaycart.js"> </script>
+<body onload="init()">
+<div id="pageWrap">
+<!-- not my code \/    \/   \/   \/   \/  \/  \/  \/ -->		
+		<nav>
+			<ul>
+  				<li id="icon"><a href="./index.html"><img src="./images/atom-logo.png" alt="logo"></a></li>
+  				<a href="checkout.html"><li id="cart"></li></a>
+  				<li class="menu-item"><a href="#contact">Contact</a></li>
+  				<li class="menu-item"><a href="./store.html">Store</a></li>
+  				<li class="menu-item"><a href="about.html">About</a></li>
+  				<li id="underline"></li>
+			</ul>
+		
+<!--    ^^^^^^^^^^^^^ not my code ^^^^^^^^^^^^--->
+ 
+ <div class="dropdown">
+ <a href="checkout.html"><img id="dropcart" src="./images/Icons/icon_cart.png"></a>
+  <button class="dropbtn"><img height=30px src="./images/Icons/icon_menu.png"> </button>
+  <div class="dropdown-content">
+		<a href="./index.html"> <li> Home </li></a>
+		<a href='./about.html'>   <li>About</li>  </a>
+		<a href='./store.html'>   <li>Store</li>  </a>
+		<a href='./contact.html'> <li>Contact</li></a>
+		<a href="./checkout.html"><li>Cart</li>   </a>
+	</div>
+	</div>
+ </nav>
+ 
+ <div id="gallery">
+	<div id="checkout">
+	 <script>
+		showcart();
+	</script>
+
 	</div>
  </div>
- 
- 
- 
+
+
+ </div>
 </body>
 </html>

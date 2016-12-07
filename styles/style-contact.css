@@ -124,7 +124,7 @@
 	}
 	
 	#contactform #name{
-		width: 90%;
+		width: 99%;
 	}
     #contactform #emailbox{
 		display: inline-block;
@@ -132,7 +132,7 @@
 		height: 50px;
 	}
 	#contactform #email{
-		width: 90%;
+		width: 99%;
 	}
 	#contactform #message{
 		height:150px;
@@ -159,14 +159,52 @@
 	
 	.gallery{
 		width: 100%;
-		height: 1350px;
+		height: 600px;
 	}
 
 	.gallery .holding{
 		width: 100%;
-		height: 1350px;
+		height: 400px;
 	}
 	
+	
+	#contactform{
+		width: 90%;
+		margin-left: 5%;
+		height: 300px;
+		text-align: left;
+	}
+	#contactform #namebox{
+		display: inline-block;
+		width: 80%;
+		height:50px;
+	}
+	
+	#contactform #name{
+		width: 99%;
+	}
+    #contactform #emailbox{
+		display: inline-block;
+		width: 80%;
+		height: 50px;
+	}
+	#contactform #email{
+		width: 99%;
+	}
+	#contactform #message{
+		height:150px;
+		width: 85%;
+	}
+	
+	#contactform #send{
+	background-color: #00C7AB;
+	height: 30px;
+	color:white;
+	border-radius:5px;
+	border: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	}
 
 }
 	

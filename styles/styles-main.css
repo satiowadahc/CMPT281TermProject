@@ -53,6 +53,10 @@ button{
 	padding-right: 10px;
 }
 
+button:active{
+	background: #515d67;
+}
+
 h3 a{
 	color: white;
 }
@@ -78,25 +82,91 @@ h3 a{
 @media (min-width: 1440px){
 	
 	
-	.pageWrap{
+	#pageWrap{
 		width: 1440px;
 		margin: auto;
 		background: #F1F1F1;
 	}
 	
-	.menubar{
-		display: inline-block;
-		height: 60px;
-		width: 1440px;
-		margin:0;
-		padding:0;
-		background: white;
-	}
+/*   \/   \/   \/   \/  \/  \/ \/ */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+.clearboth {
+	clear: both;
+
+}
+
+.clearright {
+	float:left;
+
+}
+#icon {
+	float: left;
+	padding: 15px 15px;
 	
-	.menubar #logo {
-		float: left;
-		padding: 5px 10px ;
-		height: 50px;
+	
+}
+
+#icon img {
+	width: 129px;
+	height: 43px;
+}
+
+#cart {
+	float: right;
+	height: 76px;
+	width: 58px;
+	padding-left:30px;
+	background-image: url("../images/Icons/icon_cart.png");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: rgba(255,0,0,0);
+	line-height:75px;
+	color: red;
+	font-weight: bold;
+}
+
+#underline {
+	width: 160px;
+	height: 2px;
+	position: relative;
+	top: -20px;
+	background-color: #000000;
+	transition: left 0.0s;
+	clear: left;
+	left: 0px;
+
+}
+
+nav {
+	background-color: #FFFFFF;
+}
+
+.menu-item {
+	width: 40px;
+	display: block;
+    float: right;
+    text-align: center;
+    padding: 30px 16px;
+    background-color: #FFFFFF;
+
+}
+
+.menu-item a {
+    color: #666;
+    text-decoration: none;
+}
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+	#dropcart{
+		display: none;
 	}
 	
 	.dropbtn{
@@ -107,41 +177,7 @@ h3 a{
 		display:none;
 	}
 	
-	.menuright{
-		float:right;
-		height:60px;
-		width: 360px;
-	}
-	
-	.menubar ul{
-		float: left;
-		height: 30px;
-		width: 302px;
-		margin: 0;
-		padding-top:20px;
-		padding-bottom:10px;
-		padding-right: 0;
-		padding-left: 0;
-	}
-	
-	.menubar ul li{
-		display: inline-table;
-		width: 98px;
-		height: 20px;
-	}
-	
-	.menubar #cart{
-		height: 50px;
-		width: 58px;/*0.5 px stretch*/
-		padding: 5px 0;
-		float: right;
-		display: inline;
-	}
-	
-	#menuopt:hover{
-	background: lightgrey;
-	}
-	
+
 	.banner {
 		height: 300px;
 		width: 1440px;
@@ -187,27 +223,95 @@ h3 a{
 }/*end Media query 1440px*/
 
 @media (min-width: 700px) and (max-width: 1440px){
-	.pageWrap{
+	#pageWrap{
 		width: 100%;
 		margin: auto;
 		background: #F1F1F1;
 	}
 	
-	.menubar{
-		display: inline-block;
-		height: 60px;
-		width: 100%;
-		margin:0;
-		padding:0;
-		background: white;
-	}
+	/*   \/   \/   \/   \/   \/   \/ */
 	
-	.menubar #logo {
-		float: left;
-		padding: 5px 10px ;
-		height: 50px;
-	}
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+.clearboth {
+	clear: both;
+
+}
+
+.clearright {
+	float:left;
+
+}
+#icon {
+	float: left;
+	padding: 15px 15px;
 	
+	
+}
+
+#icon img {
+	width: 129px;
+	height: 43px;
+}
+
+#cart {
+	float: right;
+	height: 76px;
+	width: 58px;
+	padding-left:30px;
+	background-image: url("../images/Icons/icon_cart.png");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: rgba(255,0,0,0);
+	line-height:75px;
+	color: red;
+	font-weight: bold;
+}
+
+#underline {
+	width: 160px;
+	height: 2px;
+	position: relative;
+	top: -20px;
+	background-color: #000000;
+	transition: left 0.0s;
+	clear: left;
+	left: 0px;
+
+}
+
+nav {
+	background-color: #FFFFFF;
+}
+
+.menu-item {
+	width: 40px;
+	display: block;
+    float: right;
+    text-align: center;
+    padding: 30px 16px;
+    background-color: #FFFFFF;
+
+}
+
+.menu-item a {
+    color: #666;
+    text-decoration: none;
+}
+	
+	
+	/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+	
+	#dropcart{
+		display:none;
+	}
 	.dropbtn{
 		display:none;
 	}
@@ -215,39 +319,7 @@ h3 a{
 	.dropdown-content{
 		display:none;
 	}
-	.menuright{
-		float:right;
-		height:60px;
-	
-	}
-	
-	.menubar ul{
-		float: left;
-		height: 30px;
-		margin: 0;
-		padding-top:20px;
-		padding-bottom:10px;
-		padding-right: 0;
-		padding-left: 0;
-	}
-	
-	.menubar ul li{
-		display: inline-table;
-		height: 20px;
-	  padding-left: 5px;
-	}
-	
-	.menubar #cart{
-		height: 50px;
-		padding: 5px 0;
-		float: right;
-		display: inline;
-	}
-	
-	#menuopt:hover{
-	background: lightgrey;
-	}
-	
+		
 	.banner {
 		height: 300px;
 		background-repeat: no-repeat;
@@ -286,36 +358,17 @@ h3 a{
 }/*end media 700-1440px*/
 
 @media (max-width: 700px){
-		.pageWrap{
+		#pageWrap{
 		width: 100%;
 		margin: auto;
 		background: #F1F1F1;
 	}
 	
-	.menubar{
-		display: inline-block;
-		height: 60px;
-		width: 100%;
-		margin:0;
-		padding:0;
+	nav{
+		height: 50px;
 		background: white;
 	}
-	
-	.menubar #logo {
-		float: left;
-		padding: 5px 10px ;
-		height: 50px;
-	}
-	
-	.menuright{
-		display: none;
-	}
-	
-	.menuright ul li{
-		display: none;
-	}
-	
-	.menuright cart{
+	ul{
 		display: none;
 	}
 

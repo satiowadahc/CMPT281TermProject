@@ -1,9 +1,12 @@
 //Chad Woitas original
 //Functions and vars related to all pages
 
-function setup(){
+
 //NOT MY OWN CODE BELOW \/    \/    \/    \/     \/   \/
-document.getElementById("logo").addEventListener("mouseover", function(){
+var whereIsMouse = "icon";
+
+function init() {
+    document.getElementById("icon").addEventListener("mouseover", function(){
 		iconMouseover("0.5");
     });
     
@@ -11,13 +14,17 @@ document.getElementById("logo").addEventListener("mouseover", function(){
 		cartMouseover("0.5");
     });
     
-    var menuItems = document.getElementsByClassName("menuopt");
+    var menuItems = document.getElementsByClassName("menu-item");
     for (let i=0; i < menuItems.length; i++) {
  		menuItems[i].addEventListener("mouseover", function() {
  	    	menuItemMouseover(i, "0.5");
  		});
     }
     
+    if ( sessionStorage.shoppingList) {
+	   	var obj = JSON.parse(sessionStorage.getItem("shoppingList"));
+	   	document.getElementById("cart").innerHTML = obj.length;
+    }
 
     window.addEventListener("resize", function() {
     	
@@ -32,10 +39,21 @@ document.getElementById("logo").addEventListener("mouseover", function(){
     	}
     });
     
-//NOT MY OWN CODE ABOVE^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 }
 
-//BELOW HERE IS NOT MY OWN CODE \/    \/    \/    \/     \/   \/
+ function fetchShoppingList() {
+	var lis;
+	if ( sessionStorage.shoppingList)  {
+ 		lis = JSON.parse(sessionStorage.getItem("shoppingList"));
+ 	}
+ 	else {
+ 		lis = [];
+ 		
+ 	} 
+	return lis;		 			
+ }
+ 
+
 function iconMouseover(v) {
 	var line = document.getElementById("underline");
 	line.style.transition = "left " + v + "s"
@@ -66,13 +84,21 @@ function menuItemMouseover(ind,v) {
 //   	document.getElementById("underlineLoc").innerHTML = whereIsMouse;
 
 }
-//ABOVE HERE IS NOT MY OWN CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-
-
-function addToCart(){
-	alert(this);
+function addToShoppingList(item) { 
+	var list = JSON.parse(sessionStorage.getItem("shoppingList"));
+	if ( list == null ) {
+		list = [];
+	}
+	list.push( item );
+	var len = list.length;
+	if ( len ==0 )  {
+		document.getElementById("cart").innerHTML = "";
+	}
+	else {
+		document.getElementById("cart").innerHTML = len;
+	}
+	sessionStorage.setItem("shoppingList", JSON.stringify(list) );
+	document.getElementById("stuffIbought").innerHTML += item.itemDescription;
 }
+//ABOVE HERE IS NOT MY OWN CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

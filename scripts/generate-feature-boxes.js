@@ -22,15 +22,19 @@ function updateInventory(page){
 			}
 		}
 	};
-	var urlNoComma = "https://mockbin.org/bin/0ceb11fe-604f-4d2b-a03c-d641f94cbb61";
+	
 	var urlMyEdit = "http://mockbin.org/bin/f57fcb2a-ca7c-4a7c-8366-0a9d19cc65f4";
-	xmlhttp.open("GET",urlMyEdit,true);
+	var url = "http://mockbin.org/bin/ead89685-6b95-44ec-89f9-cb70933e8edb";
+	xmlhttp.open("GET",url,true);
 	xmlhttp.send();
 }
 
+var buttonid = "";
 function display(objlist,holdingCell){
 	//let i in objlist required for safari
 for (let i in objlist){
+	
+	buttonid= "additem" + objlist[i].modelnum;
 document.getElementById(holdingCell).innerHTML = 
 	document.getElementById(holdingCell).innerHTML +
 	 "<div class=featureBox id=\""+objlist[i].itemDescription+"\""
@@ -41,9 +45,11 @@ document.getElementById(holdingCell).innerHTML =
     +"<p>" +objlist[i].itemDescription +"</p>"
 	+"<p id=\"price\">" +objlist[i].itemPrice +"</p>"
 	+"<br>"
-    +"<button type=\"button\" onclick=\"addToCart()\">Add To Cart </button>"
+    +"<button id=\"" +buttonid +"\">Add To Cart </button>"
 	+"</section>"
 	+"</div>";
+	
+	document.getElementById(buttonid).addEventListener("click", function(){addToShoppingList(objlist[i])});
 }
 };
 

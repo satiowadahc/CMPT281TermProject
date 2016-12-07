@@ -10,31 +10,34 @@
   <script src="./scripts/generate-feature-boxes.js"></script>
 </head>
 
-<body onload="updateInventory('index'); setup();">
-<div class="pageWrap">
- <div class="menubar">
-	<img id="logo" src="./images/atom-logo.png">
-	<div class="menuright">
-	  <ul>
-		<a href='./about.html'><li id="menuopt">About</li></a>
-		<a href='./store.html'><li id="menuopt">Store</li></a>
-		<a href='./contact.html'><li id="menuopt">Contact</li></a>
-		<li id="underline"></li>
-	  </ul>
-	  <a href="./checkout.html"><img id="cart" src="./images/Icons/icon_cart.png"></a>
-	</div>
-
+<body onload="updateInventory('index'); init();">
+<div id="pageWrap">
+		
+<!-- not my code \/    \/   \/   \/   \/  \/  \/  \/ -->		
+		<nav>
+			<ul>
+  				<li id="icon"><a href="./index.html"><img src="./images/atom-logo.png" alt="logo"></a></li>
+  				<a href="checkout.html"><li id="cart"></li></a>
+  				<li class="menu-item"><a href="./contact.html">Contact</a></li>
+  				<li class="menu-item"><a href="./store.html">Store</a></li>
+  				<li class="menu-item"><a href="./about.html">About</a></li>
+  				<li id="underline"></li>
+			</ul>
+		
+<!--    ^^^^^^^^^^^^^ not my code ^^^^^^^^^^^^--->
  
  <div class="dropdown">
+ <a href="checkout.html"><img id="dropcart" src="./images/Icons/icon_cart.png"></a>
   <button class="dropbtn"><img height=30px src="./images/Icons/icon_menu.png"> </button>
   <div class="dropdown-content">
+		<a href="./index.html"> <li> Home </li></a>
 		<a href='./about.html'>   <li>About</li>  </a>
 		<a href='./store.html'>   <li>Store</li>  </a>
 		<a href='./contact.html'> <li>Contact</li></a>
 		<a href="./checkout.html"><li>Cart</li>   </a>
   </div>
  </div>
-</div>
+</nav>
 
  <div class="clearboth"></div> 
  <div class="banner">
