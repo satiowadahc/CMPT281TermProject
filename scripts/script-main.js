@@ -22,9 +22,13 @@ function init() {
     }
     
     if ( sessionStorage.shoppingList) {
-	   	var obj = JSON.parse(sessionStorage.getItem("shoppingList"));
+		alert(sessionStorage.shoppingList);
+		var obj = JSON.parse(sessionStorage.getItem("shoppingList"));
 	   	document.getElementById("cart").innerHTML = obj.length;
     }
+	
+	
+	
 
     window.addEventListener("resize", function() {
     	
@@ -70,8 +74,6 @@ function cartMouseover(v) {
 	line.style.width = 68 + "px";
 	line.style.left = (pageWrapWidth - 78) + "px"; /*38 px for the width of the icon, 20 px for padding on the right, 10 for padding on the left*/
 	whereIsMouse = "cart";
-	document.getElementById("underlineLoc").innerHTML = whereIsMouse;
-
 }
 
 function menuItemMouseover(ind,v) {
@@ -81,8 +83,6 @@ function menuItemMouseover(ind,v) {
 	whereIsMouse = "item" + ind;
 	line.style.width = 74 + "px";
 	line.style.left = (pageWrapWidth - 78) - (74 * ( 1 + ind) ) + "px";
-//   	document.getElementById("underlineLoc").innerHTML = whereIsMouse;
-
 }
 function addToShoppingList(item) { 
 	var list = JSON.parse(sessionStorage.getItem("shoppingList"));

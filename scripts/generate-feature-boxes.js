@@ -29,13 +29,12 @@ function updateInventory(page){
 	xmlhttp.send();
 }
 
-var buttonid = "";
+
 function display(objlist,holdingCell){
 	//let i in objlist required for safari
 for (let i in objlist){
-	
-	buttonid= "additem" + objlist[i].modelnum;
-document.getElementById(holdingCell).innerHTML = 
+	var id = "additem" + objlist[i].modelnum;
+	document.getElementById(holdingCell).innerHTML = 
 	document.getElementById(holdingCell).innerHTML +
 	 "<div class=featureBox id=\""+objlist[i].itemDescription+"\""
     +"<section class=\"model\">"
@@ -45,11 +44,11 @@ document.getElementById(holdingCell).innerHTML =
     +"<p>" +objlist[i].itemDescription +"</p>"
 	+"<p id=\"price\">" +objlist[i].itemPrice +"</p>"
 	+"<br>"
-    +"<button id=\"" +buttonid +"\">Add To Cart </button>"
+    +"<button id=\"" + id +"\">Add To Cart </button>"
 	+"</section>"
 	+"</div>";
-	
-	document.getElementById(buttonid).addEventListener("click", function(){addToShoppingList(objlist[i])});
+	let c = objlist[i];
+	document.getElementById( id ).addEventListener("click", function(){addToShoppingList(c)});
 }
 };
 

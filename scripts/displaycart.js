@@ -5,9 +5,10 @@ function showcart(){
 	
 	document.getElementById("cart").innerHTML = obj.length;
 	document.writeln('<H1>Your Shopping Cart</H1>');
-	if(obj.length > 0){
+	document.writeln(obj.length);
+	/*if(obj.length > 0){
 		
-/* 	for(i in obj.length){
+ 	 for(i in obj.length){
 		document.write( 
 			'<div class="cart-item">' +
 			'<img class="cart-item-img" src="'+ obj[i].itemImageSrc + '" alt="' +  obj[i].itemImageAlt + '">' +
@@ -17,11 +18,12 @@ function showcart(){
 			'</div>'				
 		);
 		
-		total += parseFloat(obj[i].itemPrice);
+		total += parseFloat(obj[i].itemPrice); 
 		
 		
-	} */
+	}
 	
 	}//end if
-	
+	*/ 
 }//end fcn
+
